@@ -15,13 +15,19 @@ document.querySelectorAll('.main-nav a').forEach(link => {
 // Menu tabs
 const tabButtons = document.querySelectorAll('.tab-btn');
 const panels = document.querySelectorAll('.menu-panel');
+
+function activateTab(tab) {
+  tabButtons.forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
+  panels.forEach(p => p.classList.toggle('active', p.dataset.panel === tab));
+}
+
 tabButtons.forEach(btn => {
-  btn.addEventListener('click', () => {
-    tabButtons.forEach(b => b.classList.remove('active'));
-    panels.forEach(p => p.classList.remove('active'));
-    btn.classList.add('active');
-    document.querySelector(`.menu-panel[data-panel="${btn.dataset.tab}"]`).classList.add('active');
-  });
+  btn.addEventListener('click', () => activateTab(btn.dataset.tab));
+});
+
+// Favorites teasers jump straight to the matching menu tab
+document.querySelectorAll('.fav-item[data-tab]').forEach(item => {
+  item.addEventListener('click', () => activateTab(item.dataset.tab));
 });
 
 // Gallery lightbox

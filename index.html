@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lazy Cats Kebab Bar — Rīga</title>
+<meta name="description" content="Lazy Cats Kebab Bar Rīgā, Lačplēša ielā 27. Svaigi marinēta gaļa, sulīgi kebabi un frī. Pasūti piegādi caur Wolt vai Bolt Food.">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a href="#top" class="brand">
+      <img src="images/logo.png" alt="Lazy Cats Kebab Bar" class="brand-logo">
+      <span class="brand-name">Lazy Cats<br><small>Kebab Bar</small></span>
+    </a>
+
+    <div class="nav-panel" id="navPanel">
+      <nav class="main-nav" id="mainNav">
+        <a href="#menu">Menu</a>
+        <a href="#story">Par mums</a>
+        <a href="#gallery">Galerija</a>
+        <a href="#location">Atrašanās vieta</a>
+      </nav>
+
+      <div class="header-cta">
+        <a class="btn btn-wolt" href="https://wolt.com/en/lva/riga/restaurant/lazy-cat-kebab-bar?srsltid=AfmBOoqhl81pVVqXV_rVU44LQR5B2FTKGTkolpKcxiVAMykDTyNh82e7" target="_blank" rel="noopener">Pasūti Wolt</a>
+        <a class="btn btn-bolt" href="https://food.bolt.eu/en/3-riga/p/134144-lazy-cats-kebab-bar/" target="_blank" rel="noopener">Pasūti Bolt</a>
+      </div>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Izvēlne" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-bg" style="background-image:url('images/hero-spread.webp')"></div>
+  <div class="hero-scrim"></div>
+  <div class="container hero-inner">
+    <div class="hero-badge">
+      <span class="star">★</span> 9.2 uz Wolt &nbsp;·&nbsp; Atvērts līdz 23:00
+    </div>
+    <h1 class="hero-title">Lazy&nbsp;Cats<br>Kebab&nbsp;Bar</h1>
+    <p class="hero-tag">Way too lazy to cook. Sulīgs kebabs, kraukšķīga frī un labs garastāvoklis — Vecrīgas malā, Lačplēša ielā.</p>
+
+    <div class="hero-actions">
+      <a class="btn btn-lg btn-wolt" href="https://wolt.com/en/lva/riga/restaurant/lazy-cat-kebab-bar?srsltid=AfmBOoqhl81pVVqXV_rVU44LQR5B2FTKGTkolpKcxiVAMykDTyNh82e7" target="_blank" rel="noopener">
+        Pasūti caur Wolt
+      </a>
+      <a class="btn btn-lg btn-bolt" href="https://food.bolt.eu/en/3-riga/p/134144-lazy-cats-kebab-bar/" target="_blank" rel="noopener">
+        Pasūti caur Bolt Food
+      </a>
+    </div>
+
+    <div class="hero-pills">
+      <div class="pill">🛵 Piegāde 30–40 min</div>
+      <div class="pill">🚶 Līdzņemšana 10–25 min</div>
+      <div class="pill">📍 Lačplēša iela 27, Rīga</div>
+    </div>
+  </div>
+  <a href="#story" class="scroll-cue" aria-label="Ritināt uz leju">↓</a>
+</section>
+
+<!-- ===== VIDEO / STORY ===== -->
+<section class="story" id="story">
+  <div class="container story-grid">
+    <div class="story-video">
+      <video
+        src="video/promo.mp4"
+        poster="images/kebab-box-closeup.webp"
+        autoplay muted loop playsinline controls
+        class="promo-video"></video>
+    </div>
+    <div class="story-copy">
+      <span class="eyebrow">Mūsu stāsts</span>
+      <h2>Slinki koti, bet nopietns kebabs</h2>
+      <p>Lazy Cats radās no vienkāršas idejas — labam kebabam nav jābūt sarežģītam. Katru dienu paši marinējam gaļu, ceptas frī pagatavojam pasūtījumam un mērces jauc ar sirdi. Nosaukums un zīmols godina Rīgas kaķus, kas dzīvo tāpat kā mēs strādājam: relaksēti, bet ar stilu.</p>
+      <ul class="story-points">
+        <li>Katru dienu svaigi marinēta vistas un liellopa gaļa</li>
+        <li>Pašmarinētas Kabab Bomb porcijas un dirty fries</li>
+        <li>Atvērts katru dienu 12:00–23:00</li>
+        <li>Piegāde ar Wolt un Bolt Food, vai ņem līdzi pats</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MENU ===== -->
+<section class="menu" id="menu">
+  <div class="container">
+    <span class="eyebrow center">Ēdienkarte</span>
+    <h2 class="section-title center">Ko šodien gribas?</h2>
+    <p class="section-sub center">Cenas un pilns klāsts — tā, kā tās redzamas Wolt lietotnē. Pasūtīšanai spied uz kartītes vai izmanto pogas augšā.</p>
+
+    <div class="menu-tabs" id="menuTabs">
+      <button class="tab-btn active" data-tab="special">Lazy Cat's Special</button>
+      <button class="tab-btn" data-tab="uzkodas">Uzkodas</button>
+      <button class="tab-btn" data-tab="fries">Frī kartupeļi</button>
+      <button class="tab-btn" data-tab="drinks">Dzērieni</button>
+      <button class="tab-btn" data-tab="sauces">Mērces</button>
+    </div>
+
+    <!-- Lazy Cat's Special -->
+    <div class="menu-panel active" data-panel="special">
+      <div class="menu-grid">
+        <article class="menu-card">
+          <img src="images/kebab-wrap.webp" alt="Kebabs">
+          <div class="menu-card-body">
+            <span class="tag">Popular</span>
+            <h3>Kebabs</h3>
+            <div class="price"><span class="now">€6.50</span><span class="was">€7.20</span></div>
+          </div>
+        </article>
+        <article class="menu-card">
+          <img src="images/kebab-sandwich.webp" alt="Kebabs bulkā">
+          <div class="menu-card-body">
+            <span class="tag">Popular</span>
+            <h3>Kebabs bulkā</h3>
+            <div class="price"><span class="now">€8.50</span><span class="was">€9.50</span></div>
+          </div>
+        </article>
+        <article class="menu-card">
+          <img src="images/kebab-fries-cup.webp" alt="Kebabs uz šķīvja">
+          <div class="menu-card-body">
+            <span class="tag">Popular</span>
+            <h3>Kebabs uz šķīvja</h3>
+            <div class="price"><span class="now">€13.90</span><span class="was">€15.40</span></div>
+          </div>
+        </article>
+        <article class="menu-card">
+          <img src="images/kebab-box-fries.webp" alt="Kabab Box">
+          <div class="menu-card-body">
+            <span class="tag">Popular</span>
+            <h3>Kabab Box 375ml</h3>
+            <p class="desc">Kebaba box vista/liellops/mix ar frī kartupeļiem.</p>
+            <div class="price"><span class="now">€7.50</span><span class="was">€9.50</span></div>
+          </div>
+        </article>
+        <article class="menu-card">
+          <img src="images/kebab-box-closeup.webp" alt="Kabab Bomb">
+          <div class="menu-card-body">
+            <h3>Kabab Bomb!</h3>
+            <p class="desc">Kartupeļi frī 300gr ar pašmarinētu vistas 200gr kebabu, marinētu kāpostu un zaļiem salātiem.</p>
+            <div class="price"><span class="now">€15.00</span><span class="was">€17.00</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Uzkodas -->
+    <div class="menu-panel" data-panel="uzkodas">
+      <div class="menu-grid">
+        <article class="menu-card">
+          <img src="images/sides-assortment.webp" alt="Sīpolu gredzeni">
+          <div class="menu-card-body">
+            <h3>Sīpolu gredzeni (8 gab.) + Mērce</h3>
+            <div class="price"><span class="now">€4.80</span><span class="was">€6.00</span></div>
+          </div>
+        </article>
+        <article class="menu-card">
+          <img src="images/sides-assortment.webp" alt="Kartupeļu pankūkas">
+          <div class="menu-card-body">
+            <h3>Kartupeļu pankūkas (3 gab.) + Krējums</h3>
+            <div class="price"><span class="now">€6.00</span></div>
+          </div>
+        </article>
+        <article class="menu-card">
+          <img src="images/sides-assortment.webp" alt="Vistas nageti">
+          <div class="menu-card-body">
+            <h3>Vistas nageti (7 gab.) + mērce</h3>
+            <div class="price"><span class="now">€8.00</span></div>
+          </div>
+        </article>
+        <article class="menu-card">
+          <img src="images/sides-assortment.webp" alt="Kalmaru gredzeni">
+          <div class="menu-card-body">
+            <h3>Kalmaru gredzeni (8 gab.) + mērce</h3>
+            <div class="price"><span class="now">€5.60</span><span class="was">€7.00</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Frī kartupeļi -->
+    <div class="menu-panel" data-panel="fries">
+      <div class="menu-grid">
+        <article class="menu-card">
+          <img src="images/sides-assortment.webp" alt="Frī kartupeļi">
+          <div class="menu-card-body">
+            <span class="tag">Popular</span>
+            <h3>Frī kartupeļi + ketčups</h3>
+            <div class="price"><span class="now">€2.80</span><span class="was">€3.90</span></div>
+          </div>
+        </article>
+        <article class="menu-card">
+          <img src="images/sides-assortment.webp" alt="Saldie kartupeļi frī">
+          <div class="menu-card-body">
+            <h3>Saldie kartupeļi frī (batāte) + ketčups</h3>
+            <div class="price"><span class="now">€6.50</span></div>
+          </div>
+        </article>
+        <article class="menu-card">
+          <img src="images/cheese-fries.webp" alt="Dirty fries">
+          <div class="menu-card-body">
+            <h3>Dirty fries</h3>
+            <p class="desc">Kraukšķīgas formas frī, LazyCats īpašā mērce, čedaras siers, karamelizēti sīpoli.</p>
+            <div class="price"><span class="now">€6.50</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Dzērieni -->
+    <div class="menu-panel" data-panel="drinks">
+      <div class="menu-grid">
+        <article class="menu-card">
+          <img src="images/sodas.webp" alt="Coca-Cola">
+          <div class="menu-card-body">
+            <h3>Coca-Cola 0.33l</h3>
+            <div class="price"><span class="now">€1.76</span><span class="was">€2.20</span></div>
+          </div>
+        </article>
+        <article class="menu-card">
+          <img src="images/sodas.webp" alt="Coca-Cola Zero">
+          <div class="menu-card-body">
+            <h3>Coca-Cola Zero 0.33l</h3>
+            <div class="price"><span class="now">€1.76</span><span class="was">€2.20</span></div>
+          </div>
+        </article>
+        <article class="menu-card">
+          <img src="images/sodas.webp" alt="Fanta">
+          <div class="menu-card-body">
+            <h3>Fanta 0.33l</h3>
+            <div class="price"><span class="now">€1.76</span><span class="was">€2.20</span></div>
+          </div>
+        </article>
+        <article class="menu-card">
+          <img src="images/sodas.webp" alt="Sprite">
+          <div class="menu-card-body">
+            <h3>Sprite 0.33l</h3>
+            <div class="price"><span class="now">€1.76</span><span class="was">€2.20</span></div>
+          </div>
+        </article>
+        <article class="menu-card">
+          <img src="images/kvass.webp" alt="Kvass">
+          <div class="menu-card-body">
+            <h3>Kvass</h3>
+            <div class="price"><span class="now">€2.00</span><span class="was">€2.50</span></div>
+          </div>
+        </article>
+        <article class="menu-card">
+          <img src="images/water.webp" alt="Ūdens">
+          <div class="menu-card-body">
+            <h3>Ūdens</h3>
+            <div class="price"><span class="now">€1.60</span><span class="was">€2.00</span></div>
+          </div>
+        </article>
+        <article class="menu-card">
+          <img src="images/juices.webp" alt="Sula">
+          <div class="menu-card-body">
+            <h3>Sula</h3>
+            <div class="price"><span class="now">€1.68</span><span class="was">€2.10</span></div>
+          </div>
+        </article>
+        <article class="menu-card">
+          <img src="images/ayran.webp" alt="Ayran">
+          <div class="menu-card-body">
+            <h3>Ayran</h3>
+            <div class="price"><span class="now">€1.60</span><span class="was">€2.00</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Mērces -->
+    <div class="menu-panel" data-panel="sauces">
+      <div class="menu-grid">
+        <article class="menu-card">
+          <img src="images/sauces.webp" alt="Mērces">
+          <div class="menu-card-body">
+            <h3>Mērces</h3>
+            <p class="desc">Izvēlies no LazyCats mērču klāsta — no klasiskā ķiploku līdz pikantajai.</p>
+            <div class="price"><span class="now">€1.00</span><span class="was">€1.50</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <p class="menu-footnote">Pilns un vienmēr aktuāls klāsts ar visām papildu iespējām pieejams Wolt un Bolt Food lietotnēs.</p>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section class="gallery" id="gallery">
+  <div class="container">
+    <span class="eyebrow center">Galerija</span>
+    <h2 class="section-title center">Tas, kas gaida tevi kastītē</h2>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <img src="images/editorial-sandwich-grill.webp" alt="Kebabs tiek gatavots uz grila" class="g-item g-tall">
+      <img src="images/kebab-wrap.webp" alt="Svaigi tīts kebabs" class="g-item">
+      <img src="images/editorial-kebab-closeup.webp" alt="Kebaba tuvplāns rokā" class="g-item">
+      <img src="images/cheese-fries.webp" alt="Way Too Lazy siera frī" class="g-item">
+      <img src="images/editorial-falafel-wrap.webp" alt="Falafela tīteņš" class="g-item g-tall">
+      <img src="images/kebab-box-fries.webp" alt="Kebaba bokss ar frī" class="g-item">
+      <img src="images/kebab-sandwich.webp" alt="Kebabs bulciņā" class="g-item">
+      <img src="images/sauces.webp" alt="LazyCats mērces" class="g-item">
+      <img src="images/kebab-box-closeup.webp" alt="Kabab Bomb tuvplānā" class="g-item">
+      <img src="images/tote-bag.webp" alt="Lazy Cats maisiņš" class="g-item">
+    </div>
+  </div>
+</section>
+
+<!-- ===== ORDER CTA BANNER ===== -->
+<section class="order-cta">
+  <div class="container order-cta-inner">
+    <h2>Izsalcis? Kaķi jau gaida.</h2>
+    <p>Izvēlies ērtāko piegādes servisu un pasūti savu kebabu tieši tagad.</p>
+    <div class="hero-actions center">
+      <a class="btn btn-lg btn-wolt" href="https://wolt.com/en/lva/riga/restaurant/lazy-cat-kebab-bar?srsltid=AfmBOoqhl81pVVqXV_rVU44LQR5B2FTKGTkolpKcxiVAMykDTyNh82e7" target="_blank" rel="noopener">Pasūti caur Wolt</a>
+      <a class="btn btn-lg btn-bolt" href="https://food.bolt.eu/en/3-riga/p/134144-lazy-cats-kebab-bar/" target="_blank" rel="noopener">Pasūti caur Bolt Food</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LOCATION ===== -->
+<section class="location" id="location">
+  <div class="container location-grid">
+    <div class="location-info">
+      <span class="eyebrow">Atrodi mūs</span>
+      <h2>Lačplēša iela 27</h2>
+      <p class="loc-line">📍 LV-1011, Rīga, Latvija</p>
+      <p class="loc-line">📞 <a href="tel:+37127299599">+371 27 299 599</a></p>
+
+      <table class="hours-table">
+        <tbody>
+          <tr><td>Pirmdiena</td><td>12:00–23:00</td></tr>
+          <tr><td>Otrdiena</td><td>12:00–23:00</td></tr>
+          <tr><td>Trešdiena</td><td>12:00–23:00</td></tr>
+          <tr><td>Ceturtdiena</td><td>12:00–23:00</td></tr>
+          <tr><td>Piektdiena</td><td>12:00–23:00</td></tr>
+          <tr><td>Sestdiena</td><td>12:00–23:00</td></tr>
+          <tr><td>Svētdiena</td><td>12:00–23:00</td></tr>
+        </tbody>
+      </table>
+
+      <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=La%C4%8Dple%C5%A1a%20iela%2027%2C%20R%C4%ABga" target="_blank" rel="noopener">Atvērt Google Maps →</a>
+    </div>
+
+    <div class="location-map">
+      <!-- Decorative wireframe mini-map -->
+      <svg viewBox="0 0 400 400" class="wireframe-map" role="img" aria-label="Shematiska karte ar Lazy Cats Kebab Bar atrašanās vietu Lačplēša ielā 27, Rīgā">
+        <rect x="0" y="0" width="400" height="400" rx="28" class="map-bg"/>
+        <g class="map-streets" fill="none" stroke-linecap="round">
+          <path d="M -10 80 H 410" />
+          <path d="M -10 160 H 410" />
+          <path d="M -10 260 H 410" />
+          <path d="M -10 340 H 410" />
+          <path d="M 70 -10 V 410" />
+          <path d="M 150 -10 V 410" />
+          <path d="M 260 -10 V 410" />
+          <path d="M 330 -10 V 410" />
+        </g>
+        <g class="map-blocks">
+          <rect x="90" y="95" width="45" height="50" rx="10"/>
+          <rect x="170" y="95" width="70" height="50" rx="10"/>
+          <rect x="280" y="95" width="35" height="50" rx="10"/>
+          <rect x="90" y="175" width="45" height="70" rx="10"/>
+          <rect x="280" y="175" width="35" height="70" rx="10"/>
+          <rect x="170" y="270" width="70" height="55" rx="10"/>
+        </g>
+        <text x="200" y="70" class="map-label" text-anchor="middle">LAČPLĒŠA IELA</text>
+        <g class="map-pin" transform="translate(200,190)">
+          <path d="M0 -46
+                   C 15 -46 26 -34 26 -20
+                   C 26 -2 8 14 0 34
+                   C -8 14 -26 -2 -26 -20
+                   C -26 -34 -15 -46 0 -46 Z"/>
+          <circle cx="0" cy="-20" r="9" class="map-pin-hole"/>
+        </g>
+        <text x="200" y="255" class="map-pin-label" text-anchor="middle">Lazy Cats</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img src="images/logo.png" alt="Lazy Cats Kebab Bar" class="brand-logo">
+      <p>Lačplēša iela 27, LV-1011, Rīga<br>+371 27 299 599<br>Katru dienu 12:00–23:00</p>
+    </div>
+    <div class="footer-links">
+      <h4>Ātrās saites</h4>
+      <a href="#menu">Ēdienkarte</a>
+      <a href="#story">Par mums</a>
+      <a href="#gallery">Galerija</a>
+      <a href="#location">Atrašanās vieta</a>
+    </div>
+    <div class="footer-order">
+      <h4>Pasūti piegādi</h4>
+      <a class="btn btn-wolt" href="https://wolt.com/en/lva/riga/restaurant/lazy-cat-kebab-bar?srsltid=AfmBOoqhl81pVVqXV_rVU44LQR5B2FTKGTkolpKcxiVAMykDTyNh82e7" target="_blank" rel="noopener">Wolt</a>
+      <a class="btn btn-bolt" href="https://food.bolt.eu/en/3-riga/p/134144-lazy-cats-kebab-bar/" target="_blank" rel="noopener">Bolt Food</a>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    <span>© <span id="year"></span> Lazy Cats Kebab Bar. Way too lazy to cook.</span>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Aizvērt">✕</button>
+  <img src="" alt="" id="lightboxImg">
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

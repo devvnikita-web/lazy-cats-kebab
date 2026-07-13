@@ -401,7 +401,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .gallery .container { margin-bottom: 40px; }
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 4px;
 }
 .g-item {
@@ -459,20 +459,16 @@ ul { margin: 0; padding: 0; list-style: none; }
 .hours-table td:last-child { text-align: right; font-weight: 600; color: var(--navy); }
 
 .location-map { display: flex; justify-content: center; }
-.wireframe-map { width: 100%; max-width: 400px; }
-.map-bg { fill: var(--slate-bg); stroke: var(--navy); stroke-width: 2; }
-.map-streets path { stroke: #c3ccd8; stroke-width: 9; }
-.map-blocks rect { fill: rgba(34,58,94,0.10); }
-.map-label { font-family: var(--font-body); font-weight: 700; font-size: 11px; letter-spacing: 0.12em; fill: var(--navy); }
-.map-pin path { fill: var(--gold); stroke: var(--navy-deep); stroke-width: 2.5; }
-.map-pin-hole { fill: #fff; }
-.map-pin-label {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-weight: 500;
-  font-size: 16px;
-  fill: var(--navy);
+.gmap-embed {
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 1 / 1;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 2px solid var(--navy);
+  filter: grayscale(0.15) contrast(1.02);
 }
+.gmap-embed iframe { display: block; }
 
 /* ===== Footer ===== */
 .site-footer { background: var(--navy-deep); color: #fff; }
